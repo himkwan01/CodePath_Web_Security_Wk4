@@ -8,7 +8,7 @@
 
   // Find salesperson using id in query string
   $id = $_GET['id'];
-  $salespeople_result = find_salesperson_by_id($id);
+  $salespeople_result = find_salesperson_by_id(u($id));
 
   $row_count = db_num_rows($salespeople_result);
   if($row_count > 0) {

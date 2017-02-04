@@ -18,6 +18,7 @@
   // A one-step function to destroy the current session
   function destroy_current_session() {
     // TODO destroy the session file completely
+    session_unset();
     session_destroy();
   }
 
