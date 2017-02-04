@@ -33,7 +33,7 @@ The following **required** functionality is completed:
   * [ ]  Required: Compare tokens against the stored version of the token.
   * [ ]  Required: Only process forms data sent by POST requests.
   * [ ]  Required: Confirm request referer is from the same domain as the host.
-  * [ ]  Required: Store the CSRF token in the user's session.
+  * [x]  Required: Store the CSRF token in the user's session.
   * [ ]  Required: Add the same CSRF token to the login form as a hidden input.
   * [ ]  Required: When submitted, confirm that session and form tokens match.
   * [ ]  Required: If tokens do not match, show an error message.
