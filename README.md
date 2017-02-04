@@ -6,28 +6,28 @@ Time spent: **5** hours spent in total
 
 The following **required** functionality is completed:
 
-1\. [x]  Required: Test for initial vulnerabilities
+1. [x]  Required: Test for initial vulnerabilities
 
-2\. [x]  Required: Configure sessions
+2. [x]  Required: Configure sessions
   * [x]  Required: Only allow session IDs to come from cookies
   * [x]  Required: Expire after one day
   * [x]  Required: Use cookies which are marked as HttpOnly
 
-3\. [x]  Required: Complete Login page.
+3. [x]  Required: Complete Login page.
   * [x]  Required: Show an error message when username is not found.
   * [x]  Required: Show an error message when username is found but password does not match.
   * [x]  Required: After login, store user ID in session data.
   * [x]  Required: After login, store user last login time in session data.
   * [x]  Required: Regenerate the session ID at the appropriate point.
 
-4\. [x]  Required: Require login to access staff area pages.
+4. [x]  Required: Require login to access staff area pages.
   * [x]  Required: Add a login requirement to *almost all* staff area pages.
   * [x]  Required: Write code for `last_login_is_recent()`.
 
-5\. [x]  Required: Complete Logout page.
+5. [x]  Required: Complete Logout page.
   * [x]  Required: Add code to destroy the user's session file after logging out.
 
-6\. [ ]  Required: Add CSRF protections to the state forms.
+6. [ ]  Required: Add CSRF protections to the state forms.
   * [x]  Required: Create a CSRF token.
   * [ ]  Required: Add CSRF tokens to forms.
   * [ ]  Required: Compare tokens against the stored version of the token.
@@ -39,11 +39,11 @@ The following **required** functionality is completed:
   * [ ]  Required: If tokens do not match, show an error message.
   * [ ]  Required: Make sure that a logged-in user can use pages as expected.
 
-7\. [ ]  Required: Ensure the application is not vulnerable to XSS attacks.
+7. [ ]  Required: Ensure the application is not vulnerable to XSS attacks.
 
-8\. [ ]  Required: Ensure the application is not vulnerable to SQL Injection attacks.
+8. [ ]  Required: Ensure the application is not vulnerable to SQL Injection attacks.
 
-9\. [ ]  Required: Run all tests from Objective 1 again and confirm that your application is no longer vulnerable to any test.
+9. [ ]  Required: Run all tests from Objective 1 again and confirm that your application is no longer vulnerable to any test.
 
 
 The following advanced user stories are optional:
