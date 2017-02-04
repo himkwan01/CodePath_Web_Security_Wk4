@@ -1,6 +1,6 @@
 # Project 4 - Globitek Authentication and Login Throttling
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 5. [x]  Required: Complete Logout page.
   * [x]  Required: Add code to destroy the user's session file after logging out.
 
-6. [ ]  Required: Add CSRF protections to the state forms.
+6. [2]  Required: Add CSRF protections to the state forms.
   * [x]  Required: Create a CSRF token.
   * [x]  Required: Add CSRF tokens to forms.
   * [x]  Required: Compare tokens against the stored version of the token.
