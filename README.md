@@ -1,6 +1,6 @@
 # Project 4 - Globitek Authentication and Login Throttling
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 5. [x]  Required: Complete Logout page.
   * [x]  Required: Add code to destroy the user's session file after logging out.
 
-6. [ ]  Required: Add CSRF protections to the state forms.
+6. [x]  Required: Add CSRF protections to the state forms.
   * [x]  Required: Create a CSRF token.
   * [x]  Required: Add CSRF tokens to forms.
   * [x]  Required: Compare tokens against the stored version of the token.
@@ -41,9 +41,9 @@ The following **required** functionality is completed:
 
 7. [x]  Required: Ensure the application is not vulnerable to XSS attacks.
 
-8. [ ]  Required: Ensure the application is not vulnerable to SQL Injection attacks.
+8. [x]  Required: Ensure the application is not vulnerable to SQL Injection attacks.
 
-9. [ ]  Required: Run all tests from Objective 1 again and confirm that your application is no longer vulnerable to any test.
+9. [x]  Required: Run all tests from Objective 1 again and confirm that your application is no longer vulnerable to any test.
 
 
 The following advanced user stories are optional:
@@ -54,7 +54,7 @@ The following advanced user stories are optional:
 
 * [ ] Bonus Objective 2: Add CSRF protections to all forms in the staff directory
 
-* [ ]  Bonus Objective 3: CSRF tokens only valid for 10 minutes.
+* [x]  Bonus Objective 3: CSRF tokens only valid for 10 minutes.
 
 * [ ]  Bonus Objective 4: Sessions are valid only if user-agent string matches previous value.
 
