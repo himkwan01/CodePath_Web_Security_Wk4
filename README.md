@@ -27,7 +27,11 @@ The following **required** functionality is completed:
 5. [x]  Required: Complete Logout page.
   * [x]  Required: Add code to destroy the user's session file after logging out.
 
+<<<<<<< HEAD
 6. [x]  Required: Add CSRF protections to the state forms.
+=======
+6. [2]  Required: Add CSRF protections to the state forms.
+>>>>>>> b62236a9da6d7db3bc98c27eebe82a52860c5eb1
   * [x]  Required: Create a CSRF token.
   * [x]  Required: Add CSRF tokens to forms.
   * [x]  Required: Compare tokens against the stored version of the token.
