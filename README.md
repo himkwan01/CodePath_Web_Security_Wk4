@@ -52,7 +52,7 @@ The following advanced user stories are optional:
   * [ ]  Identify the security principal not being followed.
   * [ ]  Write a short description of how the code could be modified to be more secure.
 
-* [ ] Bonus Objective 2: Add CSRF protections to all forms in the staff directory
+* [x] Bonus Objective 2: Add CSRF protections to all forms in the staff directory
 
 * [x]  Bonus Objective 3: CSRF tokens only valid for 10 minutes.
 
