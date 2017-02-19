@@ -55,7 +55,7 @@
   // Inspects the session to see if it should be considered valid.
   function session_is_valid() {
     if(!last_login_is_recent()) { return false; }
-    // if(!user_agent_matches_session()) { return false; }
+     if(!user_agent_matches_session()) { return false; }
     return true;
   }
 

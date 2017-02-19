@@ -57,7 +57,7 @@ The following advanced user stories are optional:
 
 * [x]  Bonus Objective 3: CSRF tokens only valid for 10 minutes.
 
-* [ ]  Bonus Objective 4: Sessions are valid only if user-agent string matches previous value.
+* [x]  Bonus Objective 4: Sessions are valid only if user-agent string matches previous value.
 
 * [ ]  Advanced Objective: Set/Get Signed-Encrypted Cookie
   * [ ]  Create "public/set\_secret\_cookie.php".
