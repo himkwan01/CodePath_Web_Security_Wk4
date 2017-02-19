@@ -12,7 +12,24 @@ $salesperson = db_fetch_assoc($salespeople_result);
 $errors = array();
 
 if(is_post_request()) {
-
+  
+  // check for same domain
+  if(!request_is_same_domain()){
+    echo "Error: request is not the same domain";
+    exit;
+  }
+  // check if token is valid
+  if(!csrf_token_is_valid()){
+    echo "Error: invalid request";
+    exit;
+  }
+  
+  // check if token is recent
+  if(!csrf_token_is_recent()){
+    echo "Error: session timeout.";
+    exit;
+  }
+  
   // Confirm that values are present before accessing them.
   if(isset($_POST['first_name'])) { $salesperson['first_name'] = $_POST['first_name']; }
   if(isset($_POST['last_name'])) { $salesperson['last_name'] = $_POST['last_name']; }
@@ -26,6 +43,7 @@ if(is_post_request()) {
   } else {
     $errors = $result;
   }
+
 }
 ?>
 <?php $page_title = 'Staff: Edit Salesperson ' . $salesperson['first_name'] . " " . $salesperson['last_name']; ?>
@@ -48,6 +66,7 @@ if(is_post_request()) {
     Email:<br />
     <input type="text" name="email" value="<?php echo h($salesperson['email']); ?>" /><br />
     <br />
+    <?php echo csrf_token_tag() ?>
     <input type="submit" name="submit" value="Update"  />
   </form>
 

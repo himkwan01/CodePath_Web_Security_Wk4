@@ -12,7 +12,24 @@ $username = '';
 $password = '';
 
 if(is_post_request()) {
-
+  
+  // check for same domain
+  if(!request_is_same_domain()){
+    echo "Error: request is not the same domain";
+    exit;
+  }
+  // check if token is valid
+  if(!csrf_token_is_valid()){
+    echo "Error: invalid request";
+    exit;
+  }
+  
+  // check if token is recent
+  if(!csrf_token_is_recent()){
+    echo "Error: session timeout.";
+    exit;
+  }
+  
   // Confirm that values are present before accessing them.
   if(isset($_POST['username'])) { $username = $_POST['username']; }
   if(isset($_POST['password'])) { $password = $_POST['password']; }
@@ -66,6 +83,7 @@ if(is_post_request()) {
     <input type="text" name="username" value="<?php echo h($username); ?>" /><br />
     Password:<br />
     <input type="password" name="password" value="" /><br />
+    <?php echo csrf_token_tag() ?>
     <input type="submit" name="submit" value="Submit"  />
   </form>
 

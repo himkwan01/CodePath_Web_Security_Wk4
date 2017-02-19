@@ -13,6 +13,23 @@ $errors = array();
 
 if(is_post_request()) {
 
+  // check for same domain
+  if(!request_is_same_domain()){
+    echo "Error: request is not the same domain";
+    exit;
+  }
+  // check if token is valid
+  if(!csrf_token_is_valid()){
+    echo "Error: invalid request";
+    exit;
+  }
+  
+  // check if token is recent
+  if(!csrf_token_is_recent()){
+    echo "Error: session timeout.";
+    exit;
+  }
+  
   // Confirm that values are present before accessing them.
   if(isset($_POST['name'])) { $territory['name'] = $_POST['name']; }
   if(isset($_POST['position'])) { $territory['position'] = $_POST['position']; }
@@ -41,6 +58,7 @@ if(is_post_request()) {
     Position:<br />
     <input type="text" name="position" value="<?php echo h($territory['position']); ?>" /><br />
     <br />
+    <?php echo csrf_token_tag() ?>
     <input type="submit" name="submit" value="Update"  />
   </form>
 

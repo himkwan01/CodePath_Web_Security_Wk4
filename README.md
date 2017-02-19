@@ -48,9 +48,10 @@ The following **required** functionality is completed:
 
 The following advanced user stories are optional:
 
-* [ ]  Bonus Objective 1: Identify security flaw in Objective #4 (requiring login on staff pages)
-  * [ ]  Identify the security principal not being followed.
-  * [ ]  Write a short description of how the code could be modified to be more secure.
+* [x]  Bonus Objective 1: Identify security flaw in Objective #4 (requiring login on staff pages)
+  * [x]  Identify the security principal not being followed.
+  * [x]  Write a short description of how the code could be modified to be more secure.</br>
+         The error messages give certain information to the user such as the existence of the username and the correctness of the password. To prevent the information leak, the error message should be general. For example, Invalid username or password for any wrong combination of username and password. 
 
 * [x] Bonus Objective 2: Add CSRF protections to all forms in the staff directory
 
