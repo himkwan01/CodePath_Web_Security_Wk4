@@ -36,6 +36,7 @@ require_once('query_functions.php');
 require_once('validation_functions.php');
 require_once('auth_functions.php');
 require_once('csrf_functions.php');
+require_once('crypto_functions.php');
 
 $db = db_connect();
 
