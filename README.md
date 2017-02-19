@@ -59,7 +59,7 @@ The following advanced user stories are optional:
 
 * [x]  Bonus Objective 4: Sessions are valid only if user-agent string matches previous value.
 
-* [ ]  Advanced Objective: Set/Get Signed-Encrypted Cookie
+* [x]  Advanced Objective: Set/Get Signed-Encrypted Cookie
   * [x]  Create "public/set\_secret\_cookie.php".
   * [x]  Create "public/get\_secret\_cookie.php".
   * [x]  Encrypt and sign cookie before storing.
