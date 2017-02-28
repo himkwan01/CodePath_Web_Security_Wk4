@@ -3,10 +3,11 @@
 ?>
 <?php
   $signed_string = $_COOKIE['scrt'];
+  
+  // check for valid signature
   if(signed_string_is_valid($signed_string)){
-    $pos = strpos($signed_string, "--");
-    $encrypted_string = substr($signed_string,0,$pos);
-    echo "Secret message: " . key_decrypt($encrypted_string, 'scrt');
+    $encrypted_string = explode("--", $signed_string);
+    echo "Secret message: " . key_decrypt($encrypted_string[0], 'scrt');
   }
   else{
     echo "Error: invalid sign.";
