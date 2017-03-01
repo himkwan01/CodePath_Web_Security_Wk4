@@ -1,6 +1,6 @@
 <?php
 require_once('../private/initialize.php');
-
+$msg = '';
 function create_fake_login() {
   // if user is not logged in, create a fake login for them.
   // important because students may not have enabled log in yet.
