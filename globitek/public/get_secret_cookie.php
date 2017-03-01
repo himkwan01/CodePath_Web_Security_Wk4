@@ -3,7 +3,7 @@
 ?>
 <?php
   $signed_string = $_COOKIE['scrt'];
-  
+  echo "scrt = " . $_COOKIE['scrt'];
   // check for valid signature
   if(signed_string_is_valid($signed_string)){
     $encrypted_string = explode("--", $signed_string);

@@ -7,4 +7,8 @@
   $encrypted_string = key_encrypt($string, "scrt");
   
   setcookie('scrt', sign_string($encrypted_string));
+  echo "message = " . $string . "<br/>";
+  echo "cookie set <br/>";
+  echo "scrt = " . $_COOKIE['scrt'];
+  
 ?>
